@@ -1,6 +1,6 @@
 
 
-## Pizzería Mamá Mía 🍕
+## Hito 2- Pizzería Mamá Mía 🍕
 
 ¡Bienvenido/a al proyecto **Pizzería Mamá Mía**!
 
@@ -71,7 +71,7 @@ Este es un proyecto realizado como parte del Hito 1 del bootcamp Desafío Latam.
 ## Autor
 
 - Johanna Barrientos
-- Desafío Latam — Hito 1
+- Desafío Latam — Hito 2
 
 ---
 
