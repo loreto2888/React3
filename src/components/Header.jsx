@@ -24,7 +24,7 @@ const Header = () => {
       }}>
         <h1 className="display-5 fw-bold">¡Pizzería Mamma Mía!</h1>
         <p className="lead small-muted">
-          Las mejores pizzas, ingredientes frescos y mucho sabor.<br />¡Elige tu favorita y disfrútala!
+          ##Las mejores pizzas, ingredientes frescos y mucho sabor.<br />¡Elige tu favorita y disfrútala!
         </p>
       </div>
     </header>
