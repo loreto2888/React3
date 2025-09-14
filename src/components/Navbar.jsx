@@ -1,7 +1,8 @@
 import { formatCLP } from '../utils/format';
+import { useCart } from '../context/CartContext';
 
 const Navbar = ({ user, setView, handleLogout }) => {
-  const total = 25000;
+  const { total } = useCart();
 
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm sticky-top">

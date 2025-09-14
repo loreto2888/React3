@@ -1,22 +1,25 @@
 // src/App.jsx
 
-import { useState } from 'react';
+// import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './components/Home';
-import Login from './components/Login';
+import Cart from './components/Cart';
+// import Home from './components/Home';
+// import Login from './components/Login';
+import { CartProvider } from './context/CartContext';
 
 
 function App() {
-  const [view, setView] = useState('login'); // login | home
-
   return (
-    <div className="app">
-      <Navbar />
-      {view === 'login' && <Login setView={setView} />}
-      {view === 'home' && <Home />}
-      <Footer />
-    </div>
+    <CartProvider>
+      <div className="app">
+        <Navbar />
+        {/* <Home /> */}
+        {/* <Login setView={setView} /> */}
+        <Cart />
+        <Footer />
+      </div>
+    </CartProvider>
   );
 }
 
