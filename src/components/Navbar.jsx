@@ -3,7 +3,7 @@ import { useCart } from '../context/CartContext';
 import React, { useState } from 'react';
 
 const Navbar = ({ user, setView, handleLogout }) => {
-  const { total } = useCart();
+  const { total, setCart } = useCart();
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -45,7 +45,7 @@ const Navbar = ({ user, setView, handleLogout }) => {
           <div style={{ background: '#fff', padding: '32px', borderRadius: '12px', minWidth: '320px', textAlign: 'center', boxShadow: '0 2px 16px #333' }}>
             <h3>Confirmar Pago</h3>
             <p>Total a pagar: <strong>${formatCLP(total)}</strong></p>
-            <button className="btn btn-success" style={{ marginRight: '12px' }} onClick={() => { setShowModal(false); alert('¡Pago simulado!'); }}>Pagar</button>
+            <button className="btn btn-success" style={{ marginRight: '12px' }} onClick={() => { setShowModal(false); setCart([]); alert('¡Pago simulado!'); }}>Pagar</button>
             <button className="btn btn-secondary" onClick={() => setShowModal(false)}>Cancelar</button>
           </div>
         </div>
