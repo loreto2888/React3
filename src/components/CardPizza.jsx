@@ -7,7 +7,10 @@ const CardPizza = ({ nombre, precio, imagen, ingredientes, onAddToCart }) => {
         src={imagen}
         alt={`Pizza ${nombre}`}
         style={{ width: "100%", height: "150px", objectFit: "cover" }}
-        onError={e => { e.target.src = "/img/default.jpg"; }}
+        onError={e => {
+          e.target.onerror = null;
+          e.target.src = "img/default.jpg";
+        }}
       />
       <h2>{nombre}</h2>
       <p><strong>Precio:</strong> ${precio.toLocaleString()}</p>
