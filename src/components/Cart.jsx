@@ -2,7 +2,7 @@ import React from "react";
 import { useCart } from "../context/CartContext";
 
 const Cart = () => {
-  const { cart, updateQuantity, total } = useCart();
+  const { cart, updateQuantity, total, resetCart } = useCart();
 
   return (
     <div style={{ maxWidth: "500px", margin: "40px auto", background: "#fff", padding: "24px", borderRadius: "8px", boxShadow: "0 2px 8px #ccc" }}>
@@ -26,7 +26,14 @@ const Cart = () => {
             </div>
           ))}
           <h3>Total: ${total}</h3>
-          <button style={{ padding: "10px 24px", background: "#e63946", color: "#fff", border: "none", borderRadius: "6px", cursor: "pointer" }}>Pagar</button>
+          <button 
+            style={{ padding: "10px 24px", background: "#e63946", color: "#fff", border: "none", borderRadius: "6px", cursor: "pointer" }}
+            onClick={() => {
+              if (cart.length === 0) return;
+              alert('¡Compra realizada con éxito!');
+              resetCart();
+            }}
+          >Pagar</button>
         </>
       )}
     </div>
