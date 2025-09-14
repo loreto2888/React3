@@ -12,10 +12,10 @@ const Home = () => (
           <div className="col-12 col-md-6 col-lg-4" key={pizza.id}>
             <CardPizza 
               id={pizza.id}
-              name={pizza.nombre}
-              price={pizza.precio}
-              ingredients={pizza.ingredientes}
-              img={pizza.imagen}
+              nombre={pizza.nombre}
+              precio={pizza.precio}
+              ingredientes={pizza.ingredientes}
+              imagen={pizza.imagen}
             />
           </div>
         ))}
