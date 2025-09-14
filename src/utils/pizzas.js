@@ -12,7 +12,7 @@ export const pizzas = [
     id: 2,
     nombre: "Pepperoni",
     precio: 9000,
-    imagen: "./img/pepperoni.jpg",
+    imagen: "./img/peperoni.jpg",
     ingredientes: ["Queso mozzarella", "Pepperoni", "Tomate"]
   },
   {
@@ -56,9 +56,9 @@ export const pizzaCart = [
   },
   {
     id: 2,
-    nombre: "Pepperoni",
+    nombre: "Peperoni",
     precio: 9000,
-    imagen: "/img/pepperoni.jpg",
+    imagen: "/img/peperoni.jpg",
     cantidad: 2
   }
 ];
