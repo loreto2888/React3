@@ -32,8 +32,11 @@ export function CartProvider({ children }) {
 
   const total = cart.reduce((acc, p) => acc + p.precio * p.cantidad, 0);
 
+  // Resetear el carrito y el total
+  const resetCart = () => setCart([]);
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQuantity, total }}>
+    <CartContext.Provider value={{ cart, addToCart, removeFromCart, updateQuantity, total, setCart, resetCart }}>
       {children}
     </CartContext.Provider>
   );
