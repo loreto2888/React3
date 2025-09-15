@@ -1,18 +1,31 @@
 
 
-## Hito 2- Pizzería Mamá Mía 🍕
+## Hito 3 - Pizzería Mamá Mía 🍕
 
 ¡Bienvenido/a al proyecto **Pizzería Mamá Mía**!
 
-Este es un proyecto realizado como parte del Hito 1 del bootcamp Desafío Latam. Es una aplicación web desarrollada con React y Vite que simula el sitio de una pizzería, permitiendo explorar pizzas, ver detalles y navegar por distintas secciones.
+Este proyecto corresponde al Hito 3 del bootcamp Desafío Latam. Es una aplicación web desarrollada con React y Vite que simula el sitio de una pizzería, permitiendo:
+
+- Autenticación de usuario (login).
+- Listado de pizzas con imágenes, nombres, precios e ingredientes.
+- Agregar pizzas al carrito y modificar cantidades.
+- Realizar la compra y vaciar el carrito.
+- Navegación entre páginas mediante un Navbar.
+- Componentes reutilizables (Header, Footer, CardPizza, etc).
+- Estilos modernos y responsivos en CSS.
+
+---
+
 
 ## Características principales
 
-- Listado de pizzas con imágenes, nombres y precios.
-- Navegación entre páginas mediante un Navbar.
-- Componentes reutilizables (Header, Footer, CardPizza, etc).
-- Estilos personalizados en CSS.
-- Estructura modular y ordenada.
+- Login y registro de usuario.
+- Listado de pizzas con imágenes, nombres, precios e ingredientes.
+- Carrito de compras con suma total y opción de pagar.
+- Navegación entre Home, Login, Register y Carrito.
+- Componentes reutilizables y contexto para el carrito.
+- Estilos modernos y responsivos.
+
 
 ## Estructura del proyecto
 
@@ -25,18 +38,25 @@ Este es un proyecto realizado como parte del Hito 1 del bootcamp Desafío Latam.
 │   ├── styles.css
 │   ├── components/
 │   │   ├── CardPizza.jsx
+│   │   ├── Cart.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Header.jsx
 │   │   ├── Home.jsx
-│   │   └── Navbar.jsx
+│   │   ├── Login.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Register.jsx
+│   ├── context/
+│   │   └── CartContext.jsx
 │   └── utils/
-│       └── format.js
+│       ├── format.js
+│       └── pizzas.js
 ├── index.html
 ├── package.json
 ├── vite.config.js
 ├── eslint.config.js
 └── README.md
 ```
+
 
 ## Instalación y ejecución
 
@@ -53,9 +73,16 @@ Este es un proyecto realizado como parte del Hito 1 del bootcamp Desafío Latam.
 	```bash
 	npm run dev
 	```
-4. Abre tu navegador en [http://localhost:5173](http://localhost:5173) para ver la app.
+4. Abre tu navegador en [http://localhost:5173](http://localhost:5173) (o el puerto que indique Vite) para ver la app.
 
-## Scripts disponibles
+
+## ¿Cómo usar la app?
+
+1. Ingresa con tu email y contraseña en la página de Login.
+2. Explora las pizzas disponibles en la página principal.
+3. Agrega las pizzas que desees al carrito.
+4. Accede al carrito para modificar cantidades o realizar la compra.
+5. Al pagar, el carrito se vacía y puedes seguir comprando.
 
 - `npm run dev` — Inicia el servidor de desarrollo.
 - `npm run build` — Genera la versión de producción.
@@ -68,10 +95,11 @@ Este es un proyecto realizado como parte del Hito 1 del bootcamp Desafío Latam.
 - [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 
+
 ## Autor
 
 - Johanna Barrientos
-- Desafío Latam — Hito 2
+- Desafío Latam — Hito 3
 
 ---
 
