@@ -17,11 +17,18 @@ Este proyecto corresponde al Hito 3 del bootcamp Desafío Latam. Es una aplicaci
 ---
 
 
+## ¿Cómo usar la app?
+
+1. Ingresa con tu email y contraseña en la página de Login 123456, luego aceptas y te lleva a --->Explora las pizzas disponibles en la página principal.
+3. Agrega las pizzas que desees al carrito--->Accede al carrito para modificar cantidades o realizar la compra.
+5. Al pagar, el carrito  del boton verde se vacía y puedes seguir comprando.
+
+
 ## Características principales
 
-- Login y registro de usuario.
-- Listado de pizzas con imágenes, nombres, precios e ingredientes.
-- Carrito de compras con suma total y opción de pagar.
+Paso 1: Login y registro de usuario.
+Paso 2 : Listado de pizzas con imágenes, nombres, precios e ingredientes y boton agregar a carrito.
+Paso 3 : Carrito de compras  boton verde esquina derecha arriba con suma total y opción de pagar.
 - Navegación entre Home, Login, Register y Carrito.
 - Componentes reutilizables y contexto para el carrito.
 - Estilos modernos y responsivos.
@@ -57,43 +64,6 @@ Este proyecto corresponde al Hito 3 del bootcamp Desafío Latam. Es una aplicaci
 └── README.md
 ```
 
-
-## Instalación y ejecución
-
-1. **Clona el repositorio:**
-	```bash
-	git clone <url-del-repositorio>
-	cd Hito1_pizzeriamamamia_JohannaBarrientos
-	```
-2. **Instala las dependencias:**
-	```bash
-	npm install
-	```
-3. **Inicia la aplicación en modo desarrollo:**
-	```bash
-	npm run dev
-	```
-4. Abre tu navegador en [http://localhost:5173](http://localhost:5173) (o el puerto que indique Vite) para ver la app.
-
-
-## ¿Cómo usar la app?
-
-1. Ingresa con tu email y contraseña en la página de Login.
-2. Explora las pizzas disponibles en la página principal.
-3. Agrega las pizzas que desees al carrito.
-4. Accede al carrito para modificar cantidades o realizar la compra.
-5. Al pagar, el carrito se vacía y puedes seguir comprando.
-
-- `npm run dev` — Inicia el servidor de desarrollo.
-- `npm run build` — Genera la versión de producción.
-- `npm run preview` — Previsualiza la app en modo producción.
-
-## Tecnologías utilizadas
-
-- [React](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
-- [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 
 
 ## Autor
